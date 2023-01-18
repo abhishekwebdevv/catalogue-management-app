@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
         height: "100%",
       }}
     >
-      <img src={product.image} style={{ width: "100%", height: "15rem" }} />
+      <img src={product.image} style={{ width: "100%", height: "15rem" }} alt="product"/>
       <Divider sx={{ bgcolor: "black" }} />
       <Box sx={{ paddingY: "1rem" }}>
         <Typography variant="body1">{product.title}</Typography>

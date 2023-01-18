@@ -3,7 +3,7 @@ import Dropdown from "./Dropdown";
 import PropTypes from "prop-types";
 import { Box } from "@mui/material";
 
-const Nav = ({ categories }) => {
+const Nav = ({ categories, category, setCategory }) => {
   return (
     <Box sx={{ backgroundColor: "#4a86e8", padding: "1rem 0rem" }}>
       <Box
@@ -14,7 +14,7 @@ const Nav = ({ categories }) => {
           padding: "0rem 5rem",
         }}
       >
-        <Dropdown categories={categories} />
+        <Dropdown categories={categories} category={category} setCategory={setCategory} />
       </Box>
     </Box>
   );
@@ -22,6 +22,8 @@ const Nav = ({ categories }) => {
 
 Nav.propTypes = {
   categores: PropTypes.array,
+  category: PropTypes.string,
+  setCategory: PropTypes.func
 };
 
 export default Nav;
