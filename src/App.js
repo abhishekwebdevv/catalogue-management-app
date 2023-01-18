@@ -6,6 +6,7 @@ import axios from 'axios'
 import Nav from './components/Nav'
 import ProductList from './sections/ProductList'
 import Analysis from './sections/Analysis'
+import Loader from './components/Loader'
 
 const App = () => {
   const [products, setProducts] = useState([])
@@ -26,7 +27,7 @@ const App = () => {
     fetchData()
   }, [])
 
-  if (loading) return <h1>Loading...</h1>
+  if (loading) return <Loader />
 
   return (
     <div className="App">
