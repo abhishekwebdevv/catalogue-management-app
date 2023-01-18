@@ -1,4 +1,4 @@
-The final working app has been deployed on Netlify => [Catalogue Management App](https://link-url-here.org](https://clinquant-dragon-b3ee00.netlify.app/)
+The final working app has been deployed on Netlify => [Catalogue Management App](https://clinquant-dragon-b3ee00.netlify.app/)
 
 To run the local dev project in your system ->
 
